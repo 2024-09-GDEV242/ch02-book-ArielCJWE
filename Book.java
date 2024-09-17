@@ -44,6 +44,12 @@ class Book
     public int getPages() {
         return pages;
     }
+    
+    public void printInformation() {
+        System.out.println("Author: " + author);
+        System.out.println("Title: " + title);
+        System.out.println("Pages: " + pages);
+    }
         }
     // Add the methods here ...
 
