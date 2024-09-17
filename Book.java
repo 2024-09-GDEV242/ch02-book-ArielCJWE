@@ -4,7 +4,7 @@
  * as a library system, for instance.
  *
  * @author Ariel Wong-Edwin
- * @version 13 September
+ * @version 17 September
  */
 class Book
 {
@@ -13,6 +13,7 @@ class Book
     private String title;
     private int pages;
     private String referenceNumber;
+    private int bookBorrowed;
 
     /**
      * Set the author and title fields when this object
@@ -24,6 +25,7 @@ class Book
         title = bookTitle;
         pages = bookPages;
         referenceNumber = "";
+        bookBorrowed = 0;
         
     }
     
@@ -51,6 +53,10 @@ class Book
         return referenceNumber;
     }
     
+    public int getBookBorrowed() {
+        return bookBorrowed;
+    }
+    
     public void setReferenceNumber (String reference) {
         if (reference.length() >=3) {
             referenceNumber = reference;
@@ -58,6 +64,10 @@ class Book
             else {
                 System.out.println ("Error");
             }
+    }
+    
+    public void borrow () {
+        bookBorrowed++;
     }
     
     public void printInformation() {
@@ -71,6 +81,7 @@ class Book
             else { 
                 System.out.println("ZZZ ");
             }
+        System.out.println("Times the book was borrowed: " + bookBorrowed);
         }
         
     }
