@@ -102,7 +102,7 @@ class Book
 
         book1.setReferenceNumber("566");
 
-        System.out.println("Book 1 Details:");
+        System.out.println("Book 1 Information:");
         book1.printInformation();
     }
 }
