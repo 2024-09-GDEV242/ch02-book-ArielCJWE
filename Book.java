@@ -52,7 +52,12 @@ class Book
     }
     
     public void setReferenceNumber (String reference) {
-        referenceNumber = reference;
+        if (reference.length() >=3) {
+            referenceNumber = reference;
+        }
+            else {
+                System.out.println ("Error");
+            }
     }
     
     public void printInformation() {
@@ -65,7 +70,11 @@ class Book
     }
             else { 
                 System.out.println("ZZZ ");
-}
+            }
+        }
+        
+    }
+
         
     // Add the methods here ...
 
