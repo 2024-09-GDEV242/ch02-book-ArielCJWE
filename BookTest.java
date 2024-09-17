@@ -92,7 +92,29 @@ class Book
         }
         
     }
+    
+    public class BookTest {
+        
+    public static void main(String[] args) {
+        Book book1 = new Book("Harper Lee", "To Kill a Mockingbird", 281, false);
+
+        book1.borrow();
+
+        book1.setReferenceNumber("566");
+
+        System.out.println("Book 1 Details:");
+        book1.printInformation();
+    }
+}
 
         
     // Add the methods here ...
+    /*
+     * Accessor Method
+     * Boolean statements
+     * if statements
+     * print statements
+     * print statements
+     * return methods
+     */
 
