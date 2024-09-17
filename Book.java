@@ -12,6 +12,7 @@ class Book
     private String author;
     private String title;
     private int pages;
+    private String referenceNumber;
 
     /**
      * Set the author and title fields when this object
@@ -22,6 +23,7 @@ class Book
         author = bookAuthor;
         title = bookTitle;
         pages = bookPages;
+        referenceNumber = "";
         
     }
     
@@ -45,10 +47,19 @@ class Book
         return pages;
     }
     
+    public String retReferenceNumber(){
+        return referenceNumber;
+    }
+    
+    public void setReferenceNumber (String reference) {
+        referenceNumber = reference;
+    }
+    
     public void printInformation() {
         System.out.println("Author: " + author);
         System.out.println("Title: " + title);
         System.out.println("Pages: " + pages);
+        System.out.println("Reference Number: " + referenceNumber);
     }
         }
     // Add the methods here ...
